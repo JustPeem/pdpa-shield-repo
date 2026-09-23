@@ -1,0 +1,55 @@
+{
+  "_comment": "Fill in 'github' with each member's GitHub username, then run scripts/apply_members.py",
+  "members": {
+    "M01": {
+      "name": "Member 01",
+      "github": "",
+      "role": "Tech Lead & Integrator"
+    },
+    "M02": {
+      "name": "Member 02",
+      "github": "",
+      "role": "Regex — Credit card"
+    },
+    "M03": {
+      "name": "Member 03",
+      "github": "",
+      "role": "Regex — Email"
+    },
+    "M04": {
+      "name": "Member 04",
+      "github": "",
+      "role": "Regex — Phone"
+    },
+    "M05": {
+      "name": "Member 05",
+      "github": "",
+      "role": "Regex — Date of birth"
+    },
+    "M06": {
+      "name": "Member 06",
+      "github": "",
+      "role": "Regex — Address"
+    },
+    "M07": {
+      "name": "Member 07",
+      "github": "",
+      "role": "Masking engine"
+    },
+    "M08": {
+      "name": "Member 08",
+      "github": "",
+      "role": "Backend & data"
+    },
+    "M09": {
+      "name": "Member 09",
+      "github": "",
+      "role": "Frontend — shell & Mask page"
+    },
+    "M10": {
+      "name": "Member 10",
+      "github": "",
+      "role": "Frontend — Rules, Tests, DFA"
+    }
+  }
+}

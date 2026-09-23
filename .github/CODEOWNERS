@@ -1,0 +1,51 @@
+# Each path is owned by one member. Replace @M01 … @M10 with GitHub usernames
+# (scripts/apply_members.py does this from scripts/members.json).
+
+*                                   @M01
+/pdpa_shield/engine/types.py        @M01
+/pdpa_shield/cases.py               @M01
+/tests/test_integration.py          @M01
+/.github/                           @M01
+
+/pdpa_shield/rules/card.py          @M02
+/tests/rules/test_card.py           @M02
+/pdpa_shield/rules/email.py         @M03
+/tests/rules/test_email.py          @M03
+/pdpa_shield/rules/phone.py         @M04
+/tests/rules/test_phone.py          @M04
+/docs/ARCHITECTURE.md               @M04 @M01
+/pdpa_shield/rules/dob.py           @M05
+/tests/rules/test_dob.py            @M05
+/docs/QA_CHECKLIST.md               @M05
+/pdpa_shield/rules/address.py       @M06
+/tests/rules/test_address.py        @M06
+
+/pdpa_shield/engine/registry.py     @M07
+/pdpa_shield/engine/scanner.py      @M07
+/pdpa_shield/engine/risk.py         @M07
+/pdpa_shield/engine/highlight.py    @M07
+/tests/engine/                      @M07
+
+/pdpa_shield/app.py                 @M08
+/pdpa_shield/loggen.py              @M08
+/web/static/js/api.js               @M08
+/docs/API.md                        @M08
+/tests/test_api.py                  @M08
+/tests/test_loggen.py               @M08
+
+/web/templates/                     @M09
+/web/static/css/tokens.css          @M09 @M10
+/web/static/css/base.css            @M09
+/web/static/css/mask.css            @M09
+/web/static/js/app.js               @M09
+/web/static/js/i18n.js              @M09
+/web/static/js/icons.js             @M09
+/web/static/js/mask.js              @M09
+/docs/DESIGN.md                     @M09
+
+/web/static/css/rules.css           @M10
+/web/static/css/tests.css           @M10
+/web/static/css/dfa.css             @M10
+/web/static/js/rules.js             @M10
+/web/static/js/tests.js             @M10
+/web/static/js/dfa.js               @M10

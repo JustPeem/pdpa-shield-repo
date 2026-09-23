@@ -1,0 +1,19 @@
+name: Bug
+description: Something masks wrongly or the UI misbehaves
+labels: ["bug"]
+body:
+  - type: textarea
+    id: input
+    attributes: {label: Input (a log line or steps), render: text}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Expected}
+    validations: {required: true}
+  - type: textarea
+    id: actual
+    attributes: {label: Actual}
+    validations: {required: true}
+  - type: dropdown
+    id: area
+    attributes: {label: Area, options: [card, email, phone, dob, address, engine, api, ui-mask, ui-rules, ui-tests, ui-dfa]}

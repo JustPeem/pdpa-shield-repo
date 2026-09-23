@@ -1,0 +1,295 @@
+{
+  "milestones": [
+    "M1 · Foundations",
+    "M2 · Core",
+    "M3 · UI & integration",
+    "M4 · Polish & delivery"
+  ],
+  "issues": [
+    {
+      "owner": "M01",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "infra"
+      ],
+      "title": "Set up GitHub: members, branch protection, project board",
+      "body": "- [ ] Run `scripts/github_bootstrap.sh`\n- [ ] Invite all 10 members, fill `scripts/members.json`, run `scripts/apply_members.py`\n- [ ] Protect `main` and `develop`: 1 approval + CI\n- [ ] Create a Projects board (Todo / In progress / Review / Done) and add all issues"
+    },
+    {
+      "owner": "M01",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "contract"
+      ],
+      "title": "Walk the team through the contracts and freeze them",
+      "body": "Contracts: `engine/types.py`, `cases.py`, `docs/API.md`, `web/static/css/tokens.css`.\n- [ ] 30-min kickoff: architecture, ownership, workflow (CONTRIBUTING.md)\n- [ ] Everyone runs `pytest -q` locally and opens a draft PR\n- [ ] Freeze contracts at end of week 1"
+    },
+    {
+      "owner": "M01",
+      "milestone": "M3 · UI & integration",
+      "labels": [
+        "infra"
+      ],
+      "title": "Integration: make tests/test_integration.py pass on develop",
+      "body": "- [ ] Chase blockers across rules / engine / API\n- [ ] Merge develop → main, tag `v0.9`"
+    },
+    {
+      "owner": "M01",
+      "milestone": "M4 · Polish & delivery",
+      "labels": [
+        "docs"
+      ],
+      "title": "Final report, demo script and v1.0 release",
+      "body": "- [ ] Collect report sections from every member\n- [ ] 5-minute demo script (assignment sample → generated log → rules → tests → DFA)\n- [ ] Fresh-clone check following README\n- [ ] Tag `v1.0`"
+    },
+    {
+      "owner": "M02",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "regex",
+        "rule:card"
+      ],
+      "title": "Credit card rule — first draft",
+      "body": "See the checklist in `pdpa_shield/rules/card.py`.\n- [ ] Draft pattern (re.VERBOSE, commented)\n- [ ] `tests/rules/test_card.py` assignment example passes"
+    },
+    {
+      "owner": "M02",
+      "milestone": "M2 · Core",
+      "labels": [
+        "regex",
+        "rule:card"
+      ],
+      "title": "Credit card rule — separators, boundaries, Luhn",
+      "body": "- [ ] All `tests/rules/test_card.py` pass\n- [ ] `info()` Luhn check\n- [ ] explain_th / explain_en\n- [ ] +2 cases in `cases.py`"
+    },
+    {
+      "owner": "M02",
+      "milestone": "M3 · UI & integration",
+      "labels": [
+        "dfa"
+      ],
+      "title": "Review the card DFA with M10",
+      "body": "Check page 04 accepts exactly the strings the Python pattern fullmatches (ignoring lookarounds)."
+    },
+    {
+      "owner": "M03",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "regex",
+        "rule:email"
+      ],
+      "title": "Email rule — first draft",
+      "body": "Checklist in `pdpa_shield/rules/email.py`."
+    },
+    {
+      "owner": "M03",
+      "milestone": "M2 · Core",
+      "labels": [
+        "regex",
+        "rule:email"
+      ],
+      "title": "Email rule — named groups, multi-level domains, edge cases",
+      "body": "- [ ] All `tests/rules/test_email.py` pass\n- [ ] Document the 1–2 character username behaviour\n- [ ] explain_th / explain_en"
+    },
+    {
+      "owner": "M03",
+      "milestone": "M4 · Polish & delivery",
+      "labels": [
+        "docs"
+      ],
+      "title": "Presentation slides",
+      "body": "- [ ] Outline agreed with M01\n- [ ] One slide per rule (owner provides content)\n- [ ] DFA slide with M04\n- [ ] Rehearsal"
+    },
+    {
+      "owner": "M04",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "regex",
+        "rule:phone"
+      ],
+      "title": "Phone rule — first draft",
+      "body": "Checklist in `pdpa_shield/rules/phone.py`."
+    },
+    {
+      "owner": "M04",
+      "milestone": "M2 · Core",
+      "labels": [
+        "regex",
+        "rule:phone"
+      ],
+      "title": "Phone rule — +66 format and negatives",
+      "body": "- [ ] All `tests/rules/test_phone.py` pass\n- [ ] explain_th / explain_en"
+    },
+    {
+      "owner": "M04",
+      "milestone": "M3 · UI & integration",
+      "labels": [
+        "docs",
+        "dfa"
+      ],
+      "title": "Write the RE → DFA theory section",
+      "body": "Expand `docs/ARCHITECTURE.md#dfa`: backreference over a finite set is regular, 3-branch construction, equivalent states and minimisation, lookarounds, backtracking vs DFA."
+    },
+    {
+      "owner": "M05",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "regex",
+        "rule:dob"
+      ],
+      "title": "DOB rule — first draft",
+      "body": "Checklist in `pdpa_shield/rules/dob.py`."
+    },
+    {
+      "owner": "M05",
+      "milestone": "M2 · Core",
+      "labels": [
+        "regex",
+        "rule:dob"
+      ],
+      "title": "DOB rule — date validation and separators",
+      "body": "- [ ] All `tests/rules/test_dob.py` pass\n- [ ] explain_th / explain_en"
+    },
+    {
+      "owner": "M05",
+      "milestone": "M4 · Polish & delivery",
+      "labels": [
+        "qa"
+      ],
+      "title": "QA checklist and bug bash",
+      "body": "- [ ] Expand `docs/QA_CHECKLIST.md`\n- [ ] Run it on 2 browsers + phone width, TH/EN, light/dark\n- [ ] File every problem as a `bug` issue"
+    },
+    {
+      "owner": "M06",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "regex",
+        "rule:address"
+      ],
+      "title": "Address rule — first draft",
+      "body": "Checklist in `pdpa_shield/rules/address.py`."
+    },
+    {
+      "owner": "M06",
+      "milestone": "M2 · Core",
+      "labels": [
+        "regex",
+        "rule:address"
+      ],
+      "title": "Address rule — optional moo/soi, provinces, no line crossing",
+      "body": "- [ ] All `tests/rules/test_address.py` pass\n- [ ] +5 real-world address cases in `cases.py`\n- [ ] explain_th / explain_en"
+    },
+    {
+      "owner": "M07",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "engine"
+      ],
+      "title": "Scanner: priority, overlap resolution, lossless parts",
+      "body": "- [ ] `scan()` and `mask_text()` per the docstring\n- [ ] `tests/engine/test_scanner.py` pass"
+    },
+    {
+      "owner": "M07",
+      "milestone": "M2 · Core",
+      "labels": [
+        "engine"
+      ],
+      "title": "Risk score and regex highlighter",
+      "body": "- [ ] `risk.stats()`\n- [ ] `highlight.highlight_pattern()` (written with `re`)\n- [ ] `tests/engine/*` pass"
+    },
+    {
+      "owner": "M07",
+      "milestone": "M3 · UI & integration",
+      "labels": [
+        "engine",
+        "perf"
+      ],
+      "title": "Benchmark 10 000 log lines",
+      "body": "Target < 2 s for `mask_text(generate(10000))`. Record the number and machine in the report."
+    },
+    {
+      "owner": "M08",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "backend"
+      ],
+      "title": "Log generator with decoys",
+      "body": "- [ ] `loggen.generate()` per docstring\n- [ ] `tests/test_loggen.py` pass"
+    },
+    {
+      "owner": "M08",
+      "milestone": "M2 · Core",
+      "labels": [
+        "backend"
+      ],
+      "title": "API endpoints per docs/API.md",
+      "body": "- [ ] /api/mask, /api/upload, /api/generate, /api/rules, /api/tests\n- [ ] `tests/test_api.py` pass\n- [ ] Keep `web/static/js/api.js` in sync"
+    },
+    {
+      "owner": "M08",
+      "milestone": "M4 · Polish & delivery",
+      "labels": [
+        "docs"
+      ],
+      "title": "Run & deploy instructions",
+      "body": "- [ ] README quick start verified on Windows and macOS\n- [ ] Optional: deploy to a free host for the demo"
+    },
+    {
+      "owner": "M09",
+      "milestone": "M1 · Foundations",
+      "labels": [
+        "frontend",
+        "design"
+      ],
+      "title": "Design tokens and app shell",
+      "body": "- [ ] `base.css`: glass material, ambient background, sidebar + sliding nav indicator, segmented control, buttons, section titles\n- [ ] `app.js` tab routing, theme toggle\n- [ ] `icons.js` SVG set (no emoji)"
+    },
+    {
+      "owner": "M09",
+      "milestone": "M2 · Core",
+      "labels": [
+        "frontend",
+        "i18n"
+      ],
+      "title": "TH / EN language switching",
+      "body": "- [ ] `i18n.js` t() + setLang(), default Thai, remembered\n- [ ] `langchange` event for M10's pages"
+    },
+    {
+      "owner": "M09",
+      "milestone": "M3 · UI & integration",
+      "labels": [
+        "frontend"
+      ],
+      "title": "Page 01 — Mask Logs",
+      "body": "Per docs/DESIGN.md: auto-height source log, toggles, A · summary (count-up, risk ring, formula popover), B · before/after with redaction animation, tooltip, copy/download, upload + drag & drop."
+    },
+    {
+      "owner": "M10",
+      "milestone": "M2 · Core",
+      "labels": [
+        "frontend"
+      ],
+      "title": "Page 02 — Regex Rules",
+      "body": "Legend + rule cards with highlighted `tokens`, TH/EN explanations, staggered entrance."
+    },
+    {
+      "owner": "M10",
+      "milestone": "M3 · UI & integration",
+      "labels": [
+        "frontend"
+      ],
+      "title": "Page 03 — Test Suite",
+      "body": "Summary + progress bar, auto-height try-it box, results table with drawn check icons and must-not-match badges."
+    },
+    {
+      "owner": "M10",
+      "milestone": "M3 · UI & integration",
+      "labels": [
+        "frontend",
+        "dfa"
+      ],
+      "title": "Page 04 — Automaton (3-branch minimal DFA)",
+      "body": "- [ ] `buildDFA()` / `simulate()` without JS regex\n- [ ] SVG, tape + head, play/step/reset/speed, δ readout, ACCEPT pulse / REJECT shake\n- [ ] Random-string check against the Python regex with M02/M04"
+    }
+  ]
+}
